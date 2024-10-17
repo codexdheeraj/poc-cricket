@@ -1,0 +1,48 @@
+/* src/index.css */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.video-stream-container {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+}
+
+.video-element {
+  margin-top: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+
+.stream-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.stream-button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.stream-button:hover:not(:disabled) {
+  background-color: #45a049;
+}

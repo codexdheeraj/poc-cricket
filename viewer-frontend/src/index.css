@@ -1,0 +1,45 @@
+/* src/index.css */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.viewer-container {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#video {
+  margin-top: 20px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+}
+
+.stream-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.stream-button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.stream-button:hover:not(:disabled) {
+  background-color: #45a049;
+}
